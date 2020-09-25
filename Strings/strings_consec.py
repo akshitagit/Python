@@ -1,7 +1,6 @@
 import itertools
 import os
 
-a = "aabccba"
 def remove_consecutive_duplicates(string):
     for i in string:
         length = len(i)
