@@ -13,6 +13,8 @@ def insertion_sort(array):
 
 
         array[currentPosition] = currentValue
+        print("array now : ")
+        print(array)
 array = []
 n = int(input("Enter number of elements : ")) 
 for i in range(0, n): 
