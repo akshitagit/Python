@@ -1,6 +1,6 @@
 #  LANGUAGE: Python 3.8
 
-def find_hcf(x, y):     #function for find hcf of two numbers
+def find_hcf(x, y):     #function for find hcf of two numbers using Euclidian algorithm
     while (y):
         x, y = y, x % y
     return x
@@ -12,7 +12,7 @@ if __name__ == '__main__':      #main function
     lst = input().split()
     num_list = list(map(int,lst))
 
-    if (N ==1):
+    if (N == 1):
         hcf = num_list[0]
     else:
         num1 = num_list[0]
