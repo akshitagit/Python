@@ -1,1 +1,16 @@
+# Check whether a number is prime or not?
 
+# To take input 
+n= int(input("Please enter a number : "))
+i=0
+
+if n>1: #if the number is bigger than zero
+   
+   for i in range(2,n):
+       if (n % i) == 0: #find if its divisible by 
+           print(n,"is not a prime number")
+           break
+   else:
+       print(n,"is a prime number!") 
+else:
+   print(n,"is not a prime number!")
