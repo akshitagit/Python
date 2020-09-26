@@ -1,5 +1,12 @@
 # Python
 
+
+![Issues](https://img.shields.io/github/issues/akshitagit/Python)
+![Pull Requests](https://img.shields.io/github/issues-pr/akshitagit/Python)
+![Forks](https://img.shields.io/github/forks/akshitagit/Python)
+![Stars](https://img.shields.io/github/stars/akshitagit/Python)
+
+
 ## Open Repository For Students to Contribute Algorithms and Data Structures in different Languages
 
 ## This Repository is meant for everyone to create code and learn to contribute to open source
