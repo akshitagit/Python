@@ -1,3 +1,5 @@
+
+# function to find hcf of given numbers
 def calcHCF(a,b):
     return b if a%b==0 else calcHCF(b, a%b)
 
