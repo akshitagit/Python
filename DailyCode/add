@@ -1,1 +1,22 @@
-
+## Checking the Armstrong Number
+def armstrong(n):
+    a=0
+    num=n
+    while num>0:
+        a=a+1
+        num=num//10
+    b=0
+    num=n
+    while num>0:
+        end=num%10
+        b=b+(end**a)
+        num=num//10
+    if b==n:
+        return True
+    else:
+        return False
+n=int(input())
+if armstrong(n):
+    print('true')
+else: 
+    print('false')
