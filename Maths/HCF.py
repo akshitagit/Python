@@ -29,3 +29,4 @@ if __name__ == '__main__':
         hcf = calcHCF(hcf, arr[i])
     
     print(hcf)
+    print(fibonacci(20))
