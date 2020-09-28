@@ -8,10 +8,10 @@ if num > 1:
    # check for factors
    for i in range(2,num):
        if (num % i) == 0:
-           print(num,"It's not a prime number")
+           print(num,"is not a prime number")
            break
    else:
-       print(num,"It's a prime number")
+       print(num,"is a prime number")
        
 # if input number is less than or equal to 1
 else:
