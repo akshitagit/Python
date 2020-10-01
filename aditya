@@ -1,0 +1,48 @@
+from plyer import notification
+import requests
+from bs4 import BeautifulSoup
+import time
+
+
+def notifyme(title,message):
+    notification.notify(
+    title=title,
+    message=message,
+    app_icon="F:\project\python\Coronavirus_Notification_system\icon.ico",
+    timeout=10
+    )
+
+
+def getData(url):
+    r=requests.get(url)
+    return r.text
+
+if __name__ == '__main__':
+    while True:
+
+        # notifyme("Coronavirus","Let's Stop the spread of this virus together")
+        myHtmlData=getData('https://www.mohfw.gov.in/')
+
+        soup = BeautifulSoup(myHtmlData, 'html.parser')
+        # print(soup.prettify())
+        myDataStr=""
+        for tr in soup.find_all('tbody')[0].find_all('tr'):
+            myDataStr +=tr.get_text()
+
+        myDataStr=myDataStr[1:]
+
+
+        itemList=myDataStr.split("\n\n")
+
+        states =['Bihar','Delhi','Maharashtra']
+
+        for item in itemList[0:20]:
+            dataList=item.split('\n')
+            if dataList[1] in states:
+                print(dataList)
+                nTitle ='cases Of Covid-19'
+                nText =f"State:{dataList[1]}\nTotal Cases: {dataList[5]}\nActive Cases:{dataList[2]}\nRecovered:{dataList[3]}\nDeaths :{dataList[4]}"
+                notifyme(nTitle,nText)
+                time.sleep(15)
+    time.sleep(360)
+
