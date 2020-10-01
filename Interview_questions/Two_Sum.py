@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Sep 28 11:20:54 2020
-
-@author: Lenovo
-"""
 """
 Question:
     
