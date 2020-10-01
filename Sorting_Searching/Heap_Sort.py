@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Sep 28 11:31:45 2020
-
-@author: Lenovo
-"""
-
 # Python program for implementation of heap Sort 
   
 # To heapify subtree rooted at index i. 
