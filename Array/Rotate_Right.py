@@ -1,11 +1,7 @@
 
-# coding: utf-8
-
-# In[ ]:
-
 
 arr = list();     
-n=input("Enter the number of elements you want in the array: ")    
+n=int(input("Enter the number of elements you want in the array: "))    
 
 #print("Enter the array elements one by one:")
 for i in range(int(n)):
@@ -15,9 +11,8 @@ for i in range(int(n)):
 #Display the original array    
 print("Array before rotation is:",arr)   
 
-#rotation of the array by 3 elements to left by slicing
-l=arr[0:3]
-del arr[0:3]
-arr=arr+l
-print('Array after rotation is:',arr)
-
+#rotation of the array by 3 elements to right by slicing
+l=arr[n-3:n]
+del arr[n-3:n]
+l=l+arr
+print(l)
