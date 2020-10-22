@@ -1,16 +1,20 @@
-n=int(input())
+#Fibonacci Series
 
-def fibonacci(n):
-  if(n>20)
-    return
-  a=0
-  b=0
-  c=1
-  while(n>0):
-    print(a)
-    a=b+c
-    c=b
-    b=a
-    n-=1
-  
-fibonacci(20)
+n = int(input("Enter a Number: "))
+n1 = 0
+n2 = 1
+count = 0
+
+if n == 0:
+    print("Enter a positive Number!")
+elif n == 1:
+    print(n1)
+else:
+   print("Fibonacci Series:")
+   while count < n:
+       print(n1)
+       nth = n1 + n2
+       # new values
+       n1 = n2
+       n2 = nth
+       count += 1
