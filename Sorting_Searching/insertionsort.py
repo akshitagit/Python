@@ -21,6 +21,4 @@ for i in range(0, n):
     ele = int(input()) 
   
     array.append(ele) # adding the element 
-
-insertion_sort(array)
-print("sorted array: " + str(array))
+print("sorted array: " + str(insertion_sort(array)))
