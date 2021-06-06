@@ -9,15 +9,15 @@
 
 # REPOSITORY MAINTAINER : ![AKSHITA GUPTA](https://github.com/akshitagupta15june) 
 
-## Open Repository For Students to Contribute Algorithms and Data Structures in different Languages
+## Students may contribute algorithms and data structures in a variety of languages to an open repository.
 
 ## This Repository is meant for everyone to create code and learn to contribute to open source
 
-People can star, fork or clone this repo and can add any type of data structures or algorithm codes and can raise PR during hacktoberfest.
+Anyone may star, fork, or clone this repo during Hacktoberfest and add any kind of data structures or algorithm scripts, as well as raise PR.
 
 Use this repo for contributing in open source.
-Start solving issues and raise the pull requests and even you can create your own issues.
-If you want to contribute to a project, the simplest way is to:
+Start resolving bugs and submitting pull requests, and you can even start your own.
+The most straightforward approach to contribute to a project is to:
 
 Find a ISSUE you want to contribute to ->> Fork it
 
