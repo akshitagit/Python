@@ -1,4 +1,4 @@
-# Compares the adjacent values and swapping them if they are not in the right order
+# Compares the adjacent values and swaps them if they are not in the right order
 
 def sorting(numbers):
 	for j in range(len(numbers)): # repeating the loop for the number of element amount of times
@@ -6,7 +6,7 @@ def sorting(numbers):
 		count = 0
 		while count < len(numbers) - 1:
 			if numbers[count] > numbers[count + 1]: # compares adjacent values
-				numbers[count], numbers[count+1] = numbers[count + 1], numbers[count] # swapping the places of lower and higher value
+				numbers[count], numbers[count + 1] = numbers[count + 1], numbers[count] # swapping the places of lower and higher value
 				swapped = True
 			count = count + 1
 		if swapped == False:
